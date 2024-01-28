@@ -5,8 +5,11 @@
     {% include "recipes/partials/search.html" %}
 
     <main class="main-content-container">
-        <main class="main-content main-content-list container">
-        </main>
+        <div class="main-content main-content-list container">
+            {% include "recipes/partials/recipe.html" %}
+        </div>
     </main>
+
+    {% include "recipes/partials/footer.html" %}
 </body>
 </html>
