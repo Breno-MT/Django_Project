@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from utils.recipes.faker_info import make_recipe
 
-def home_url(request):
+def home(request):
     return render(request, 'recipes/pages/home.html', context={
         'name': 'Home',
         'recipes': [make_recipe() for _ in range(10)]
